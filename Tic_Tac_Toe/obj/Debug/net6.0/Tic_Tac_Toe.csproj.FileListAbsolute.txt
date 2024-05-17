@@ -1,0 +1,15 @@
+G:\Інститут\2 курс\КПЗ\Tic_Tac_Toe\Tic_Tac_Toe\bin\Debug\net6.0\Tic_Tac_Toe.exe
+G:\Інститут\2 курс\КПЗ\Tic_Tac_Toe\Tic_Tac_Toe\bin\Debug\net6.0\Tic_Tac_Toe.deps.json
+G:\Інститут\2 курс\КПЗ\Tic_Tac_Toe\Tic_Tac_Toe\bin\Debug\net6.0\Tic_Tac_Toe.runtimeconfig.json
+G:\Інститут\2 курс\КПЗ\Tic_Tac_Toe\Tic_Tac_Toe\bin\Debug\net6.0\Tic_Tac_Toe.dll
+G:\Інститут\2 курс\КПЗ\Tic_Tac_Toe\Tic_Tac_Toe\bin\Debug\net6.0\Tic_Tac_Toe.pdb
+G:\Інститут\2 курс\КПЗ\Tic_Tac_Toe\Tic_Tac_Toe\obj\Debug\net6.0\Tic_Tac_Toe.csproj.AssemblyReference.cache
+G:\Інститут\2 курс\КПЗ\Tic_Tac_Toe\Tic_Tac_Toe\obj\Debug\net6.0\Tic_Tac_Toe.GeneratedMSBuildEditorConfig.editorconfig
+G:\Інститут\2 курс\КПЗ\Tic_Tac_Toe\Tic_Tac_Toe\obj\Debug\net6.0\Tic_Tac_Toe.AssemblyInfoInputs.cache
+G:\Інститут\2 курс\КПЗ\Tic_Tac_Toe\Tic_Tac_Toe\obj\Debug\net6.0\Tic_Tac_Toe.AssemblyInfo.cs
+G:\Інститут\2 курс\КПЗ\Tic_Tac_Toe\Tic_Tac_Toe\obj\Debug\net6.0\Tic_Tac_Toe.csproj.CoreCompileInputs.cache
+G:\Інститут\2 курс\КПЗ\Tic_Tac_Toe\Tic_Tac_Toe\obj\Debug\net6.0\Tic_Tac_Toe.dll
+G:\Інститут\2 курс\КПЗ\Tic_Tac_Toe\Tic_Tac_Toe\obj\Debug\net6.0\refint\Tic_Tac_Toe.dll
+G:\Інститут\2 курс\КПЗ\Tic_Tac_Toe\Tic_Tac_Toe\obj\Debug\net6.0\Tic_Tac_Toe.pdb
+G:\Інститут\2 курс\КПЗ\Tic_Tac_Toe\Tic_Tac_Toe\obj\Debug\net6.0\Tic_Tac_Toe.genruntimeconfig.cache
+G:\Інститут\2 курс\КПЗ\Tic_Tac_Toe\Tic_Tac_Toe\obj\Debug\net6.0\ref\Tic_Tac_Toe.dll
