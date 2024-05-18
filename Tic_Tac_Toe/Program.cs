@@ -1,13 +1,11 @@
 ﻿using TicTacToe.Controllers;
 
-namespace TicTacToe
+namespace TicTacToe;
+public class Program
 {
-    public class Program
+    public static void Main(string[] args)
     {
-        public static void Main(string[] args)
-        {
-            GameController gameController = new GameController();
-            gameController.StartGame();
-        }
+        GameController gameController = new GameController();
+        gameController.StartGame();
     }
 }
