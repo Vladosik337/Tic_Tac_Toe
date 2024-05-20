@@ -1,14 +1,16 @@
-﻿using TicTacToe.Models;
+﻿using Tic_Tac_Toe.Models;
+using TicTacToe.Models;
 using TicTacToe.Views;
 
 namespace TicTacToe.Controllers
 {
+
     public class GameController
     {
         private readonly Board _board;
-        private Player _player1;
-        private Player _player2;
-        private Player _currentPlayer;
+        private IPlayer _player1;
+        private IPlayer _player2;
+        private IPlayer _currentPlayer;
         private readonly GameView _view;
 
         public GameController()
@@ -32,9 +34,21 @@ namespace TicTacToe.Controllers
 
         private void SetUpPlayers()
         {
-            _view.GetPlayerInfo(out string player1Name, out string player2Name);
-            _player1 = new Player(player1Name, 'X');
-            _player2 = new Player(player2Name, 'O');
+            _view.GetPlayerInfo(out string player1Name, out _);
+            _player1 = new HumanPlayer(player1Name, 'X');
+
+            int choice = _view.DisplayMenu();
+
+            if (choice == 1)
+            {
+                _view.GetSecondPlayerInfo(out string player2Name);
+                _player2 = new HumanPlayer(player2Name, 'O');
+            }
+            else
+            {
+                _player2 = new AIPlayer("AI Player", 'O');
+            }
+
             _currentPlayer = _player1;
         }
 
@@ -45,8 +59,7 @@ namespace TicTacToe.Controllers
                 _view.ClearConsole();
                 _view.DisplayBoard(_board);
 
-                int cell;
-                _view.GetPlayerMove(_currentPlayer, out cell);
+                int cell = _currentPlayer.GetMove();
 
                 if (!_board.MakeMove(cell, _currentPlayer.Symbol))
                 {
@@ -75,3 +88,4 @@ namespace TicTacToe.Controllers
         }
     }
 }
+
