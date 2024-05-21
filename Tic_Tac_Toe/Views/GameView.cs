@@ -1,4 +1,5 @@
-﻿using TicTacToe.Models;
+﻿using Tic_Tac_Toe.Models;
+using TicTacToe.Models;
 
 namespace TicTacToe.Views
 {
@@ -27,26 +28,7 @@ namespace TicTacToe.Views
         {
             Console.WriteLine("Enter name for Player 1 (X): ");
             player1Name = Console.ReadLine();
-            Console.WriteLine("Enter name for Player 2 (O): ");
-            player2Name = Console.ReadLine();
-        }
-
-        public void GetPlayerMove(Player player, out int cell)
-        {
-            while (true)
-            {
-                Console.WriteLine($"{player.Name} ({player.Symbol}), enter your move (1-9): ");
-                string input = Console.ReadLine();
-
-                if (int.TryParse(input, out cell) && cell >= 1 && cell <= 9)
-                {
-                    break;
-                }
-                else
-                {
-                    Console.WriteLine("Invalid input. Please enter a number between 1 and 9.");
-                }
-            }
+            player2Name = null;
         }
 
         public void DisplayInvalidMoveMessage()
@@ -54,7 +36,7 @@ namespace TicTacToe.Views
             Console.WriteLine("Invalid move. Try again.");
         }
 
-        public void DisplayWinnerMessage(Player player)
+        public void DisplayWinnerMessage(IPlayer player)
         {
             Console.WriteLine($"{player.Name} wins!");
         }
@@ -69,6 +51,25 @@ namespace TicTacToe.Views
             Console.WriteLine("Do you want to play again? (y/n): ");
             string response = Console.ReadLine().ToLower();
             return response == "y";
+        }
+
+        public int DisplayMenu()
+        {
+            Console.WriteLine("Choose the game mode:");
+            Console.WriteLine("1. Play with another player");
+            Console.WriteLine("2. Play with AI");
+            int choice;
+            while (!int.TryParse(Console.ReadLine(), out choice) || (choice != 1 && choice != 2))
+            {
+                Console.WriteLine("Invalid choice. Please enter 1 or 2:");
+            }
+            return choice;
+        }
+
+        public void GetSecondPlayerInfo(out string player2Name)
+        {
+            Console.WriteLine("Enter name for Player 2 (O): ");
+            player2Name = Console.ReadLine();
         }
     }
 }

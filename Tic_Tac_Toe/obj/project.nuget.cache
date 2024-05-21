@@ -1,13 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "JzZr+2l2IDHkELiwZORGcE583TLJZ5MGhNUezIqkbXiho94xcs+ZdHwXjjr1YQaeEXpckAX0tjEpIHuyFVGgBw==",
+  "dgSpecHash": "xxgDOpIuzxdOLkQ6Zy2yuA5vWV0rvZN4A9K/9HDkt4Xgn3NK9raXjsMTNPG8uO/efKvc9POYX7RSCsRy1RcYWA==",
   "success": true,
-  "projectFilePath": "G:\\Інститут\\2 курс\\КПЗ\\Tic_Tac_Toe\\Tic_Tac_Toe\\Tic_Tac_Toe.csproj",
-  "expectedPackageFiles": [
-    "C:\\Users\\ДОМ\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\6.0.23\\microsoft.windowsdesktop.app.ref.6.0.23.nupkg.sha512",
-    "C:\\Users\\ДОМ\\.nuget\\packages\\microsoft.netcore.app.ref\\6.0.23\\microsoft.netcore.app.ref.6.0.23.nupkg.sha512",
-    "C:\\Users\\ДОМ\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\6.0.23\\microsoft.aspnetcore.app.ref.6.0.23.nupkg.sha512",
-    "C:\\Users\\ДОМ\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\6.0.23\\microsoft.netcore.app.host.win-x64.6.0.23.nupkg.sha512"
-  ],
+  "projectFilePath": "C:\\Users\\Admin\\OneDrive\\Рабочий стол\\Університет\\2 курс\\ІІ семестр\\КПЗ\\Tic_Tac_Toe\\Tic_Tac_Toe\\Tic_Tac_Toe.csproj",
+  "expectedPackageFiles": [],
   "logs": []
 }
