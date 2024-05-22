@@ -11,11 +11,13 @@ namespace Tic_Tac_Toe.Models
     {
         public string Name { get; set; }
         public char Symbol { get; set; }
+        public int WinCount { get; set; }
 
         public HumanPlayer(string name, char symbol)
         {
             Name = name;
             Symbol = symbol;
+            WinCount = 0;
         }
 
         public int GetMove()

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\OneDrive\\Рабочий стол\\Університет\\2 курс\\ІІ семестр\\КПЗ\\Tic_Tac_Toe\\Tic_Tac_Toe\\Tic_Tac_Toe.csproj": {}
+    "C:\\Users\\user\\Desktop\\New\\Tic_Tac_Toe\\Tic_Tac_Toe.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\OneDrive\\Рабочий стол\\Університет\\2 курс\\ІІ семестр\\КПЗ\\Tic_Tac_Toe\\Tic_Tac_Toe\\Tic_Tac_Toe.csproj": {
+    "C:\\Users\\user\\Desktop\\New\\Tic_Tac_Toe\\Tic_Tac_Toe.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\OneDrive\\Рабочий стол\\Університет\\2 курс\\ІІ семестр\\КПЗ\\Tic_Tac_Toe\\Tic_Tac_Toe\\Tic_Tac_Toe.csproj",
+        "projectUniqueName": "C:\\Users\\user\\Desktop\\New\\Tic_Tac_Toe\\Tic_Tac_Toe.csproj",
         "projectName": "Tic_Tac_Toe",
-        "projectPath": "C:\\Users\\Admin\\OneDrive\\Рабочий стол\\Університет\\2 курс\\ІІ семестр\\КПЗ\\Tic_Tac_Toe\\Tic_Tac_Toe\\Tic_Tac_Toe.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\OneDrive\\Рабочий стол\\Університет\\2 курс\\ІІ семестр\\КПЗ\\Tic_Tac_Toe\\Tic_Tac_Toe\\obj\\",
+        "projectPath": "C:\\Users\\user\\Desktop\\New\\Tic_Tac_Toe\\Tic_Tac_Toe.csproj",
+        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\user\\Desktop\\New\\Tic_Tac_Toe\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -55,7 +55,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
