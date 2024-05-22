@@ -1,9 +1,10 @@
 ﻿using Tic_Tac_Toe.Models;
+using Tic_Tac_Toe.Views;
 using TicTacToe.Models;
 
 namespace TicTacToe.Views
 {
-    public class GameView
+    public class GameView : IBoardObserver
     {
         public void DisplayBoard(Board board)
         {
@@ -65,11 +66,22 @@ namespace TicTacToe.Views
             }
             return choice;
         }
-
+        public void DisplayStatistics(IPlayer player1, IPlayer player2, int drawCount)
+        {
+            Console.WriteLine("Game Statistics:");
+            Console.WriteLine($"{player1.Name} (X): {player1.WinCount} wins");
+            Console.WriteLine($"{player2.Name} (O): {player2.WinCount} wins");
+            Console.WriteLine($"Draws: {drawCount}");
+        }
         public void GetSecondPlayerInfo(out string player2Name)
         {
             Console.WriteLine("Enter name for Player 2 (O): ");
             player2Name = Console.ReadLine();
+        }
+        public void Update()
+        {
+            Console.Clear();
+            Console.WriteLine("Board updated!");
         }
     }
 }

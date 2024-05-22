@@ -12,11 +12,14 @@ namespace TicTacToe.Controllers
         private IPlayer _player2;
         private IPlayer _currentPlayer;
         private readonly GameView _view;
+        private int _drawCount;
 
         public GameController()
         {
-            _board = new Board();
+            _board = Board.Instance;
             _view = new GameView();
+            _board.AddObserver(_view);
+            _drawCount = 0;
         }
 
         public void StartGame()
@@ -26,6 +29,7 @@ namespace TicTacToe.Controllers
             while (true)
             {
                 PlayRound();
+                DisplayStatistics();
                 if (!_view.PromptPlayAgain()) break;
                 _view.ClearConsole();
                 _board.Reset();
@@ -72,6 +76,7 @@ namespace TicTacToe.Controllers
                     _view.ClearConsole();
                     _view.DisplayBoard(_board);
                     _view.DisplayWinnerMessage(_currentPlayer);
+                    UpdateWinCount(_currentPlayer);
                     break;
                 }
 
@@ -85,6 +90,15 @@ namespace TicTacToe.Controllers
 
                 _currentPlayer = _currentPlayer == _player1 ? _player2 : _player1;
             }
+        }
+        public void UpdateWinCount(IPlayer player)
+        {
+            player.WinCount++;
+        }
+
+        private void DisplayStatistics()
+        {
+            _view.DisplayStatistics(_player1, _player2, _drawCount);
         }
     }
 }

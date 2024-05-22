@@ -1,14 +1,31 @@
-﻿namespace TicTacToe.Models
+﻿using System;
+using Tic_Tac_Toe.Views;
+
+namespace TicTacToe.Models
 {
     public class Board
     {
+        private static Board _instance;
         public char[,] Grid { get; private set; }
         public const int Size = 3;
+        private List<IBoardObserver> _observers = new List<IBoardObserver>();
 
-        public Board()
+        private Board()
         {
             Grid = new char[Size, Size];
             Reset();
+        }
+
+        public static Board Instance
+        {
+            get
+            {
+                if (_instance == null)
+                {
+                    _instance = new Board();
+                }
+                return _instance;
+            }
         }
 
         public void Reset()
@@ -20,6 +37,7 @@
                     Grid[i, j] = (char)('1' + i * Size + j);
                 }
             }
+            NotifyObservers();
         }
 
         public bool MakeMove(int cell, char playerSymbol)
@@ -30,6 +48,7 @@
             if (Grid[row, col] != 'X' && Grid[row, col] != 'O')
             {
                 Grid[row, col] = playerSymbol;
+                NotifyObservers();
                 return true;
             }
             return false;
@@ -66,6 +85,23 @@
                 }
             }
             return true;
+        }
+        public void AddObserver(IBoardObserver observer)
+        {
+            _observers.Add(observer);
+        }
+
+        public void RemoveObserver(IBoardObserver observer)
+        {
+            _observers.Remove(observer);
+        }
+
+        private void NotifyObservers()
+        {
+            foreach (var observer in _observers)
+            {
+                observer.Update();
+            }
         }
     }
 }
